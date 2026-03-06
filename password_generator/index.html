@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Password Generator</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <div class="developer-mark">
+        <p class="dev-name">mababajo</p>
+    </div>
+
+    <body>
+
+        <div class="container">
+            <h1>Password Generator</h1>
+            <input type="text" id="password" readonly>
+
+            <div class="controls">
+
+            <label>Password Length</label>
+
+            <input type="number" id="length" value="12" min="6" max="32">
+
+            </div>
+
+            <button onclick="generatePassword()">Generate Password</button>
+            <button onclick="copyPassword()">Copy Password</button>
+
+            <p id="strength"></p>
+
+            <div class="options">
+                <label class="toggle">
+                    <input type="checkbox" id="uppercase" checked>
+                    Uppercase Letters
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" id="lowercase" checked>
+                    Lowercase Letters
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" id="numbers" checked>
+                    Numbers
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" id="symbols" checked>
+                    Symbols
+                </label>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
